@@ -27,7 +27,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = "com.projects.simple_apps.clients")
+@SpringBootApplication()
 @EnableJpaRepositories("com.projects.simple_apps.clients.repository")
 public class Application extends SpringBootServletInitializer {
     public static void main(String[] args) {
