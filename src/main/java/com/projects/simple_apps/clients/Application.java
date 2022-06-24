@@ -28,8 +28,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication()
-@EnableJpaRepositories(value = "com.projects.simple_apps.clients.repository",
-        entityManagerFactoryRef = "sessionFactory")
+@EnableJpaRepositories(value = "com.projects.simple_apps.clients.repository")
 public class Application extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
