@@ -21,8 +21,12 @@ import java.util.List;
 @RequestMapping("/clients")
 public class ClientsController {
 
+    private final ClientRepository clientRepository;
+
     @Autowired
-    private ClientRepository clientRepository;
+    public ClientsController(ClientRepository clientRepository) {
+        this.clientRepository = clientRepository;
+    }
 
     @GetMapping
     public List<Client> getClients() {
