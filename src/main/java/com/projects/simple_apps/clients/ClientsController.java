@@ -1,5 +1,6 @@
 package com.projects.simple_apps.clients;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,11 +19,8 @@ import java.util.List;
 @RequestMapping("/clients")
 public class ClientsController {
 
-    private final ClientRepository clientRepository;
-
-    public ClientsController(ClientRepository clientRepository) {
-        this.clientRepository = clientRepository;
-    }
+    @Autowired
+    private ClientRepository clientRepository;
 
     @GetMapping
     public List<Client> getClients() {
