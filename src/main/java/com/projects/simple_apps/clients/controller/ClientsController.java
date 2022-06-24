@@ -1,5 +1,7 @@
-package com.projects.simple_apps.clients;
+package com.projects.simple_apps.clients.controller;
 
+import com.projects.simple_apps.clients.entity.Client;
+import com.projects.simple_apps.clients.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

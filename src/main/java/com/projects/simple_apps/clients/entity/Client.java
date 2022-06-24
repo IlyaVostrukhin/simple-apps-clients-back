@@ -1,4 +1,4 @@
-package com.projects.simple_apps.clients;
+package com.projects.simple_apps.clients.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
